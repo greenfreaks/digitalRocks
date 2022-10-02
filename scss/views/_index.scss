@@ -1,0 +1,250 @@
+.beneficios {
+    display: flex;
+
+    .beneficios__text {
+        margin-left: 50px;
+
+        .beneficios__text--item {
+            display: flex;
+            margin-bottom: 20px;
+
+            .item-img {
+                margin-right: 20px;
+            }
+
+            .item-text {
+                h4 {
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    color: $black;
+                    font-weight: bold;
+                }
+            }
+
+        }
+    }
+}
+
+.ornament {
+    img {
+        position: absolute;
+        margin-top: 300px;
+        z-index: 2;
+        max-height: 400px;
+    }
+}
+
+.salud {
+    padding: 50px 80px;
+
+    .salud__info {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        div {
+            max-width: 30%;
+
+            p {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+
+    .steps__img {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        img {
+            justify-self: center;
+            align-self: center;
+            max-height: 90%;
+            margin-left: 20px;
+        }
+    }
+
+    .steps__items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        ul {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: repeat(1fr, 2);
+            grid-template-rows: repeat(1, auto);
+            grid-template-areas:
+                "itemOne    itemTwo"
+                "itemThree  itemFour"
+            ;
+
+            img {
+                max-height: 80px;
+            }
+
+            .itemOne {
+                grid-area: itemOne;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .itemTwo {
+                grid-area: itemTwo;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .itemThree {
+                grid-area: itemThree;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .itemFour {
+                grid-area: itemFour;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    .steps__ornament {
+        margin-top: 50px;
+        max-height: 400px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .beneficios {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .beneficios__img {
+            img {
+                max-height: 300px;
+            }
+        }
+    }
+
+    .ornament {
+        img {
+            max-height: 250px;
+        }
+    }
+
+    .steps {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+
+        .steps__img {
+            margin-top: 30px;
+            img {
+                max-height: 450px;
+            }
+        }
+        .steps__items {
+            ul {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "itemOne    itemTwo     itemThree   itemFour";
+                margin-bottom: 20px;
+            }
+        }
+        .steps__ornament{
+            display: none;
+        }
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .beneficios{
+        .beneficios__img{
+            margin-top: 30px;
+            img{
+                max-height: 250px;
+            }
+        }
+    }
+
+    .ornament{
+        img{
+            max-height: 200px;
+        }
+    }
+
+    .salud{
+        padding: 50px 1px;
+        .salud__info{
+            flex-wrap: nowrap;
+        }
+    }
+
+    .steps{
+        .steps__img{
+            img{
+                max-height: 250px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .ornament{
+        display: none;
+    }
+
+    .salud{
+        padding-right: 20px;
+        padding-left: 20px;
+        .salud__info{
+            flex-direction: column;
+            div{
+                max-width: 90%;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .steps{
+        .steps__items{
+            ul{
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-areas: 
+                "itemOne    itemTwo"
+                "itemThree  itemFour";
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+    .beneficios {
+        .beneficios__img {
+            img {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {}

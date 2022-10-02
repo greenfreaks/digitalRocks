@@ -1,0 +1,15 @@
+/* Base */
+@import 'base/reset';
+@import 'base/colorVariables';
+/* Components */
+@import 'components/navbar';
+@import 'components/buttons';
+@import 'components/slider';
+@import 'components/footer';
+/* Utilities */
+@import 'utilities/texts';
+@import 'utilities/backgrounds';
+@import 'utilities/specialFeatures';
+/* Layout */
+/* Views */
+@import 'views/index';
