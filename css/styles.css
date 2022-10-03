@@ -308,6 +308,10 @@ footer {
 .spaceSection {
   padding-top: 130px; }
 
+@media screen and (max-width: 576px) {
+  .spaceSection {
+    padding-top: 80px; } }
+
 .line {
   display: block; }
 
@@ -483,6 +487,9 @@ footer {
     max-height: 250px; } }
 
 @media screen and (max-width: 576px) {
+  .beneficios .beneficios__text {
+    padding: 20px;
+    margin-left: 0px; }
   .ornament {
     display: none; }
   .salud {
@@ -497,6 +504,8 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "itemOne    itemTwo" "itemThree  itemFour"; } }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 320px) {
   .beneficios .beneficios__img img {
-    display: none; } }
+    max-height: 200px; }
+  .steps .steps__img img {
+    max-height: 200px; } }

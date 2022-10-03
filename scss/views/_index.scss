@@ -208,6 +208,12 @@
 }
 
 @media screen and (max-width: 576px) {
+    .beneficios{
+        .beneficios__text{
+            padding: 20px;
+            margin-left: 0px;
+        }
+    }
     .ornament{
         display: none;
     }
@@ -241,10 +247,25 @@
     .beneficios {
         .beneficios__img {
             img {
-                display: none;
+                
             }
         }
     }
 }
 
-@media screen and (max-width: 320px) {}
+@media screen and (max-width: 320px) {
+    .beneficios{
+        .beneficios__img{
+            img{
+                max-height: 200px;
+            }
+        }
+    }
+    .steps{
+        .steps__img{
+            img{
+                max-height: 200px;
+            }
+        }
+    }
+}

@@ -15,6 +15,12 @@
 .spaceSection{
     padding-top: 130px;
 }
+
+@media screen and (max-width: 576px){
+    .spaceSection{
+    padding-top: 80px;
+    }
+}
 .line{
     display: block;
 }
