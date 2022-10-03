@@ -68,6 +68,19 @@ body {
   display: none;
   font-size: 1.2em; }
 
+@media screen and (max-width: 992px) {
+  .header__nav .header__nav--content {
+    width: 60%; }
+    .header__nav .header__nav--content a {
+      /* font-weight: bold; */ }
+      .header__nav .header__nav--content a:hover {
+        transform: translateY(-50px);
+        transition: all 0.5s;
+        color: #FF5400; }
+    .header__nav .header__nav--content ul {
+      display: flex;
+      justify-content: space-around; } }
+
 @media screen and (max-width: 768px) {
   /*------ NAVBAR -------*/
   .header__nav .header__nav--logo img {
@@ -305,6 +318,9 @@ footer {
       footer .footer__nav .footer__navTwo ul li a {
         letter-spacing: 1px;
         text-decoration: none; }
+        footer .footer__nav .footer__navOne ul li a:hover,
+        footer .footer__nav .footer__navTwo ul li a:hover {
+          color: #FF5400; }
   footer .footer__social h4 {
     margin-bottom: 15px; }
   footer .footer__social .footer__social--icons ul {
@@ -312,7 +328,9 @@ footer {
     footer .footer__social .footer__social--icons ul li {
       margin-right: 15px; }
       footer .footer__social .footer__social--icons ul li a img {
-        max-width: 40px; }
+        width: 40px; }
+        footer .footer__social .footer__social--icons ul li a img:hover {
+          width: 42px; }
 
 @media screen and (max-width: 768px) {
   footer {

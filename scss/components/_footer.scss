@@ -26,6 +26,9 @@ footer {
                     a {
                         letter-spacing: 1px;
                         text-decoration: none;
+                        &:hover{
+                            color: $orange;
+                        }
                     }
                 }
             }
@@ -47,7 +50,10 @@ footer {
 
                     a {
                         img {
-                            max-width: 40px;
+                            width: 40px;
+                            &:hover{
+                                width: 42px;
+                            }
                         }
                     }
                 }

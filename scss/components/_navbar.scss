@@ -56,6 +56,29 @@
     font-size: 1.2em;
 }
 
+@media screen and (max-width: 992px) {
+    .header__nav{
+        .header__nav--content {
+            width: 60%;
+    
+            a {
+    
+                /* font-weight: bold; */
+                &:hover {
+                    transform: translateY(-50px);
+                    transition: all 0.5s;
+                    color: $orange;
+                }
+            }
+    
+            ul {
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 768px) {
 
     /*------ NAVBAR -------*/
