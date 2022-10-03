@@ -247,7 +247,16 @@
     .beneficios {
         .beneficios__img {
             img {
-                
+                max-width: 300px;
+            }
+        }
+    }
+    .steps{
+        padding: 20px;
+        .steps__img{
+            margin-top: 50px;
+            img{
+                max-width: 320px;
             }
         }
     }
